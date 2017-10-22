@@ -3,25 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ERKS_Website", "..\ERKS_Website\", "{5C1D2AD8-F65C-4B22-9173-AF3F537A32E7}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ERKS_Website(1)", "ERKS_Website\", "{BB67C27B-1327-4EBA-A84F-6E20254D5C17}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_61391"
-		Debug.AspNetCompiler.PhysicalPath = "..\ERKS_Website\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61391\"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_62300"
+		Debug.AspNetCompiler.PhysicalPath = "ERKS_Website\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62300\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_61391"
-		Release.AspNetCompiler.PhysicalPath = "..\ERKS_Website\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61391\"
+		Release.AspNetCompiler.VirtualPath = "/localhost_62300"
+		Release.AspNetCompiler.PhysicalPath = "ERKS_Website\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62300\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "61391"
-		SlnRelativePath = "..\ERKS_Website\"
+		VWDPort = "62300"
+		SlnRelativePath = "ERKS_Website\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
@@ -30,8 +30,8 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5C1D2AD8-F65C-4B22-9173-AF3F537A32E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C1D2AD8-F65C-4B22-9173-AF3F537A32E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB67C27B-1327-4EBA-A84F-6E20254D5C17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB67C27B-1327-4EBA-A84F-6E20254D5C17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
