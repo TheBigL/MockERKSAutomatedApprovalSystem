@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="LookupFile.aspx.vb" Inherits="Automated_Approval_System_LookupFile" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="false" CodeFile="LookupFile.aspx.vb" Inherits="Automated_Approval_System_LookupFile" %>
 
 <!DOCTYPE html>
 
