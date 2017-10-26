@@ -22,6 +22,6 @@ namespace ERKS.Framework.Entities
 
         public string Province { get; set; }
 
-        public string Postal_Code { set; set; }
+        public string Postal_Code { get; set; }
     }
 }
