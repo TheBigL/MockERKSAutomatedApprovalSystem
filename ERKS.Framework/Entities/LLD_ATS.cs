@@ -9,17 +9,17 @@ namespace ERKS.Framework.Entities
     public partial class LLD_ATS
     {
 
-        public int ATSID { get; set; }
+        public int ATS_ID { get; set; }
 
-        public int MeridianNumber { get; set; }
+        public int Meridian_Number { get; set; }
 
-        public int RangeNumber { get; set; }
+        public int Range_Number { get; set; }
 
-        public int TownshipNumber { get; set; }
+        public int Township_Number { get; set; }
 
-        public int SectionNumber { get; set; }
+        public int Section_Number { get; set; }
 
-        public int QuarterSectionNumber { get; set; }
+        public int Quarter_Section_Number { get; set; }
 
         public int LSD { get; set; }
 
