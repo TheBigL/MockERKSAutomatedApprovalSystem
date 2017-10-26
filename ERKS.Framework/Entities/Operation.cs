@@ -8,9 +8,9 @@ namespace ERKS.Framework.Entities
     [Table("Operation")]
    public partial class Operation
     {
-        public int OperationId { get; set; }
+        public int Operation_ID { get; set; }
 
-        public string OperationName { get; set; }
+        public string Operation_Name { get; set; }
 
         public string Description { get; set; }
     }
