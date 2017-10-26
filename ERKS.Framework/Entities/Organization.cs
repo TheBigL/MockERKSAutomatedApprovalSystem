@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace ERKS.Framework.Entities
+{
+    [Table("Organization")]
+    public partial class Organization
+    {
+        public int Organization_ID { get; set; }
+
+        public int Location_Code { get; set; }
+
+        public string Organization_Name { get; set; }
+
+        public string Organization_Description { get; set; }
+
+        public string Phone { get; set; }
+
+        public string Email { get; set; }
+    }
+}
