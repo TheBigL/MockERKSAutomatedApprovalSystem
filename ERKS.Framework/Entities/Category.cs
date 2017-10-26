@@ -8,9 +8,9 @@ namespace ERKS.Framework.Entities
     [Table("Category")]
     public partial class Category
     {
-        public int CategoryId { get; set; }
+        public int Category_ID { get; set; }
 
-        public string CategoryName { get; set; }
+        public string Category_Name { get; set; }
 
         public string Description { get; set; }
     }
