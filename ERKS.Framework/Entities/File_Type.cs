@@ -11,5 +11,7 @@ namespace ERKS.Framework.Entities
         public int Type_ID { get; set; }
 
         public string Type_Description { get; set; }
+
+        public virtual ICollection<Site_File> SiteFile { get; set; }
     }
 }

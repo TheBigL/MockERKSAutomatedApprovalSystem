@@ -17,5 +17,7 @@ namespace ERKS.Framework.Entities
         public int Microfilm_Roll_Number { get; set; }
 
         public int Microfilm_Frame_Number { get; set; }
+
+        public virtual ICollection<Site_File> SiteFile { get; set; }
     }
 }

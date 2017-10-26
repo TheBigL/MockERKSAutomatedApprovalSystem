@@ -43,5 +43,11 @@ namespace ERKS.Framework.Entities
         public string RM_Classification { get; set; }
 
         public string RSI { get; set; }
+
+        public virtual Site_File SiteFile { get; set; }
+
+        public virtual Officer Officer { get; set; }
+
+        public virtual Manager_Group ManagerGroup { get; set; }
     }
 }

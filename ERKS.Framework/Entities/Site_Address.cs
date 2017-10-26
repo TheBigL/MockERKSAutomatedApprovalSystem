@@ -23,5 +23,9 @@ namespace ERKS.Framework.Entities
         public string Province { get; set; }
 
         public string Postal_Code { get; set; }
+
+        public virtual LLD_ATS LLD_ATS { get; set; }
+
+        public virtual ICollection<Organization> Organization { get; set; }
     }
 }

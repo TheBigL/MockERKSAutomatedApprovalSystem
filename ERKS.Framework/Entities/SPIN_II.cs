@@ -13,5 +13,7 @@ namespace ERKS.Framework.Entities
         public string Street_Range { get; set; }
 
         public string Avenue_Range { get; set; }
+
+        public virtual ICollection<Site_File> SiteFile { get; set; }
     }
 }

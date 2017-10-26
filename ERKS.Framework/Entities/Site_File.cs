@@ -29,5 +29,23 @@ namespace ERKS.Framework.Entities
         public string File_Status { get; set; }
 
         public DateTime? Closed_Date { get; set; }
+
+        public virtual File_Type FileType { get; set; }
+
+        public virtual Operation Operation { get; set; }
+
+        public virtual LLD_PBL LLD_PBL { get; set; }
+
+        public virtual Category Category { get; set; }
+
+        public virtual SPIN_II SPIN_II { get; set; }
+
+        public virtual Organization Organization { get; set; }
+
+        public virtual Document_Type DocumentType { get; set; }
+
+        public virtual Security_Classification SecurityClassification { get; set; }
+
+        public virtual ICollection<Record_Details> RecordDetails { get; set; }
     }
 }

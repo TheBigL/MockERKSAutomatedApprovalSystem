@@ -13,5 +13,7 @@ namespace ERKS.Framework.Entities
         public string Operation_Name { get; set; }
 
         public string Description { get; set; }
+
+        public virtual ICollection<Site_File> SiteFile { get; set; }
     }
 }

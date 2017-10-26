@@ -15,5 +15,7 @@ namespace ERKS.Framework.Entities
         public int Block_Number { get; set; }
 
         public int Lot_Number { get; set; }
+
+        public virtual ICollection<Site_File> SiteFile { get; set; }
     }
 }

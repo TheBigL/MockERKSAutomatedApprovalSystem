@@ -23,6 +23,6 @@ namespace ERKS.Framework.Entities
 
         public int LSD { get; set; }
 
-        
+        public virtual ICollection<Site_Address> SiteAddress { get; set; }
     }
 }

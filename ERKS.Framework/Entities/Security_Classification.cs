@@ -13,5 +13,7 @@ namespace ERKS.Framework.Entities
         public string Security_Classification_Name { get; set; }
 
         public string Security_Classification_Description { get; set; }
+
+        public virtual ICollection<Site_File> SiteFile { get; set; }
     }
 }

@@ -19,5 +19,9 @@ namespace ERKS.Framework.Entities
         public string Phone { get; set; }
 
         public string Email { get; set; }
+
+        public virtual Site_File Site_File { get; set; }
+
+        public virtual ICollection<Site_File> SiteFile { get; set; }
     }
 }

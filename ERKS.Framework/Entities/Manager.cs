@@ -17,5 +17,9 @@ namespace ERKS.Framework.Entities
         public string Phone { get; set; }
 
         public string Email { get; set; }
+
+        public virtual Manager Managers { get; set; }
+
+        public virtual ICollection<Record_Details> RecordDetails { get; set; }
     }
 }

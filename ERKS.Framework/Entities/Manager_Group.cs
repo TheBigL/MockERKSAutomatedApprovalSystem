@@ -15,5 +15,7 @@ namespace ERKS.Framework.Entities
         public string Manager_Group_Name { get; set; }
 
         public string Description { get; set; }
+
+        public virtual ICollection<Manager_Group> ManagerGroup { get; set; }
     }
 }
