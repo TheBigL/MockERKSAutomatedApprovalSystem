@@ -50,6 +50,7 @@
     <Compile Include="BLL\Security\SecurityRoles.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Entities\LLD_ATS.cs" />
+    <Compile Include="Entities\Operation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
