@@ -30,6 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
       <HintPath>..\ERKS_Website\Bin\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
     </Reference>
@@ -51,23 +59,21 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Document_Type.cs" />
-    <Compile Include="Entities\File_Type.cs" />
     <Compile Include="Entities\LLD_ATS.cs" />
     <Compile Include="Entities\LLD_PBL.cs" />
     <Compile Include="Entities\Manager.cs" />
-    <Compile Include="Entities\Manager_Group.cs" />
     <Compile Include="Entities\Officer.cs" />
     <Compile Include="Entities\Operation.cs" />
-    <Compile Include="Entities\Organization.cs" />
-    <Compile Include="Entities\Record_Details.cs" />
     <Compile Include="Entities\Security_Classification.cs" />
-    <Compile Include="Entities\Site_Address.cs" />
-    <Compile Include="Entities\Site_File.cs" />
     <Compile Include="Entities\SPIN_II.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DAL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
