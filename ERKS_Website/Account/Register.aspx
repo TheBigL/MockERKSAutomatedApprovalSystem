@@ -39,10 +39,9 @@
             </div>
 
             <div class="form-group">
-              <asp:Label runat="server" ID="UserTypeLabel" CssClass="col-md-2 control-label">User Type</asp:Label>
+                <asp:Label runat="server" ID="UserTypeLabel" CssClass="col-md-2 control-label">User Type</asp:Label>
                 <div class="col-md-10">
                  <asp:DropDownList runat="server" ID="UserCategory" DataSourceID="SqlDataSource1"></asp:DropDownList>
-                 
                 </div>
             </div>
         </div>
