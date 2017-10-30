@@ -61,8 +61,7 @@
   <ItemGroup>
     <Compile Include="BLL\Security\ApplicationUser.cs" />
     <Compile Include="BLL\Security\SecurityRoles.cs" />
-    <Compile Include="Class1.cs" />
-    <Compile Include="DAL\MockERKSContext.cs" />
+	<Compile Include="DAL\MockERKSContext.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Document_Type.cs" />
     <Compile Include="Entities\File_Type.cs" />
