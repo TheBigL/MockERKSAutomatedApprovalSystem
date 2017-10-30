@@ -34,6 +34,8 @@
                     CssClass="text-danger" Display="Dynamic" ErrorMessage="The confirm password field is required." />
                 <asp:CompareValidator runat="server" ControlToCompare="Password" ControlToValidate="ConfirmPassword"
                     CssClass="text-danger" Display="Dynamic" ErrorMessage="The password and confirmation password do not match." />
+
+                <asp:DropDownList runat="server" ID="UserCategory"></asp:DropDownList>
             </div>
         </div>
         <div class="form-group">
