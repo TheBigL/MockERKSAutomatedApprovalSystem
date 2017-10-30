@@ -35,7 +35,14 @@
                 <asp:CompareValidator runat="server" ControlToCompare="Password" ControlToValidate="ConfirmPassword"
                     CssClass="text-danger" Display="Dynamic" ErrorMessage="The password and confirmation password do not match." />
 
-                <asp:DropDownList runat="server" ID="UserCategory"></asp:DropDownList>
+               
+            </div>
+
+            <div class="form-group">
+                <asp:Label runat="server" ID="UserTypeLabel" CssClass="col-md-2 control-label">User Type</asp:Label>
+                <div class="col-md-10">
+                 <asp:DropDownList runat="server" ID="UserCategory" DataSourceID="SqlDataSource1"></asp:DropDownList>
+                </div>
             </div>
         </div>
         <div class="form-group">
