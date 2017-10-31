@@ -61,7 +61,9 @@
   <ItemGroup>
     <Compile Include="BLL\Security\ApplicationUser.cs" />
     <Compile Include="BLL\Security\SecurityRoles.cs" />
-	<Compile Include="DAL\MockERKSContext.cs" />
+    <Compile Include="BLL\Security\UnregisteredUser.cs" />
+    <Compile Include="BLL\Security\UserManager.cs" />
+    <Compile Include="DAL\MockERKSContext.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Document_Type.cs" />
     <Compile Include="Entities\File_Type.cs" />
@@ -73,6 +75,7 @@
     <Compile Include="Entities\Operation.cs" />
     <Compile Include="Entities\Organization.cs" />
     <Compile Include="Entities\Record_Details.cs" />
+    <Compile Include="Entities\Security\UserProfile.cs" />
     <Compile Include="Entities\Security_Classification.cs" />
     <Compile Include="Entities\Site_Address.cs" />
     <Compile Include="Entities\Site_File.cs" />

@@ -1,10 +1,16 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="false" CodeFile="LookupFile.aspx.vb" Inherits="Automated_Approval_System_LookupFile" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="LookupFile.aspx.cs" Inherits="Automated_Approval_System_LookupFile" MasterPageFile="~/Site.master" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
-   <div class="row">
+<!DOCTYPE html>
 
-
-   </div>
-
-
-</asp:Content>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+    </div>
+    </form>
+</body>
+</html>
