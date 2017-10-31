@@ -26,12 +26,15 @@ namespace ERKS.Framework.Entities
 
         public int Essential { get; set; }
 
+        [StringLength(25)]
         public string Offcial { get; set; }
 
         public int Storage_Medium { get; set; }
 
+        [StringLength(50)]
         public string Accession { get; set; }
 
+        [StringLength(50)]
         public string Subject { get; set; }
 
         public string Update_Cycle_Period { get; set; }

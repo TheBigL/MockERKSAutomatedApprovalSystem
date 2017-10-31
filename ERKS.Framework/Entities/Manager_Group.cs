@@ -12,6 +12,7 @@ namespace ERKS.Framework.Entities
 
         public int Manager_ID { get; set; }
 
+        [StringLength(25)]
         public string Manager_Group_Name { get; set; }
 
         public string Description { get; set; }

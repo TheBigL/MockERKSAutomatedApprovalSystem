@@ -10,8 +10,10 @@ namespace ERKS.Framework.Entities
     {
         public int LINC_Number { get; set; }
 
+        [StringLength(50)]
         public string Street_Range { get; set; }
 
+        [StringLength(50)]
         public string Avenue_Range { get; set; }
 
         public virtual ICollection<Site_File> SiteFile { get; set; }

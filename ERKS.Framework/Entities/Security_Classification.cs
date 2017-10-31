@@ -10,6 +10,7 @@ namespace ERKS.Framework.Entities
     {
         public int Security_Classification_ID { get; set; }
 
+        [StringLength(50)]
         public string Security_Classification_Name { get; set; }
 
         public string Security_Classification_Description { get; set; }
