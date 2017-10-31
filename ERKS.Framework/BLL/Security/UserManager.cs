@@ -36,7 +36,7 @@ namespace ERKS.Framework.BLL.Security
         public List<UserProfile>
         */
 
-
+        #endregion
 
     }
 }
