@@ -6,6 +6,14 @@ using System.Threading.Tasks;
 
 namespace ERKS.Framework.Entities.Security
 {
+    /// <summary>
+    ///
+    /// StaffID, OrganizationID, AdminID
+    ///
+    /// Username, Password, FirstName, LastName (if Applicable)
+    ///
+    /// 
+    /// </summary>
     public class UserProfile
     {
 
