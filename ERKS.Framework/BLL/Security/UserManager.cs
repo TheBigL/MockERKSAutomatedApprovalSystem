@@ -1,4 +1,5 @@
 ﻿using ERKS.Framework.DAL;
+using ERKS.Framework.Entities.Security;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System;
@@ -29,8 +30,11 @@ namespace ERKS.Framework.BLL.Security
         private const string STR_WEBMASTER_USERNAME = "Webmaster";
         #endregion
 
-        
-      
+
+        #region User CRUD
+        /*[DataObjectMethod(DataObjectMethodType.Select, true)]
+        public List<UserProfile>
+        */
 
 
 
