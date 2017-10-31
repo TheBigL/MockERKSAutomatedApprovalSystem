@@ -12,12 +12,14 @@ namespace ERKS.Framework.Entities
 
         public int Location_Code { get; set; }
 
+        [StringLength(50)]
         public string Organization_Name { get; set; }
 
         public string Organization_Description { get; set; }
 
         public string Phone { get; set; }
 
+        [StringLength(125)]
         public string Email { get; set; }
 
         public virtual Site_File Site_File { get; set; }

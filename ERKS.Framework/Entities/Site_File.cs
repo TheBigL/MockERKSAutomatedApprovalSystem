@@ -26,6 +26,7 @@ namespace ERKS.Framework.Entities
 
         public int Security_Classification_ID { get; set; }
 
+        [StringLength(25)]
         public string File_Status { get; set; }
 
         public DateTime? Closed_Date { get; set; }

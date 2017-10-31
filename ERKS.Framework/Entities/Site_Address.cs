@@ -12,16 +12,22 @@ namespace ERKS.Framework.Entities
 
         public int ATS_ID { get; set; }
 
+        [StringLength(255)]
         public string Location { get; set; }
 
+        [StringLength(255)]
         public string Address { get; set; }
 
+        [StringLength(255)]
         public string Street { get; set; }
 
+        [StringLength(255)]
         public string City { get; set; }
 
+        [StringLength(255)]
         public string Province { get; set; }
 
+        [StringLength(6)]
         public string Postal_Code { get; set; }
 
         public virtual LLD_ATS LLD_ATS { get; set; }

@@ -10,6 +10,7 @@ namespace ERKS.Framework.Entities
     {
         public int Category_ID { get; set; }
 
+        [StringLength(25)]
         public string Category_Name { get; set; }
 
         public string Description { get; set; }
