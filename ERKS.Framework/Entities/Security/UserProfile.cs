@@ -11,7 +11,7 @@ namespace ERKS.Framework.Entities.Security
     /// StaffID, OrganizationID, AdminID
     ///
     /// Username, Password, FirstName, LastName (if Applicable)
-    ///
+    ///Look at my DMIT2018 Final Project for more details
     /// 
     /// </summary>
     public class UserProfile
