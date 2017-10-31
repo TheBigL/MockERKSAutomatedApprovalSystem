@@ -29,12 +29,10 @@ namespace ERKS.Framework.BLL.Security
         private const string STR_WEBMASTER_USERNAME = "Webmaster";
         #endregion
 
-        #region User CRUD
-        [DataObjectMethod(DataObjectMethodType.Select, true)]
-        public List<UserProfile>
+        
+      
 
 
-        #endregion
 
     }
 }
