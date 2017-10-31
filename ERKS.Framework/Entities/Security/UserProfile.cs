@@ -9,5 +9,6 @@ namespace ERKS.Framework.Entities.Security
     public class UserProfile
     {
 
+
     }
 }

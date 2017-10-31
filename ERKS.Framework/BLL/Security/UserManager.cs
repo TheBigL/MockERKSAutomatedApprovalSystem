@@ -1,4 +1,5 @@
 ﻿using ERKS.Framework.DAL;
+using ERKS.Framework.Entities.Security;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System;
@@ -30,9 +31,9 @@ namespace ERKS.Framework.BLL.Security
         #endregion
 
         #region User CRUD
-        [DataObjectMethod(DataObjectMethodType.Select, true)]
+        /*[DataObjectMethod(DataObjectMethodType.Select, true)]
         public List<UserProfile>
-
+        */
 
         #endregion
 
