@@ -11,15 +11,11 @@ namespace ERKS.Framework.DAL
 {
     public class MockERKSContext : DbContext
     {
-<<<<<<< HEAD
-             public MockERKSContext()
-            : base("name=MockERKS")
-=======
-        public MockERKSContext()
+
+                public MockERKSContext()
             : base("name=MockERKSDb")
->>>>>>> fdbb41b1e45ff0640de4e839d625a0b96386ffe5
-        {
-        }
+        {}
+
 
     }
 }
