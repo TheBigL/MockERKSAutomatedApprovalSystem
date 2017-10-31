@@ -10,6 +10,7 @@ namespace ERKS.Framework.BLL.Security
     {
         public const string WebAdmins = "WebAdmins";
         public const string Staff = "Staff";
+        public const string Client = "Client";
 
 
         public static List<string> StartUpSecurityRoles
@@ -19,6 +20,7 @@ namespace ERKS.Framework.BLL.Security
                 List<string> value = new List<string>();
                 value.Add(WebAdmins);
                 value.Add(Staff);
+                value.Add(Client);
                 return value;
             }
         }
