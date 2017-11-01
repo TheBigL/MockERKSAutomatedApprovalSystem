@@ -13,5 +13,7 @@ namespace ERKS.Framework.DAL
         {
 
         }
+
+        //TODO: Add the Dbset here
     }
 }
