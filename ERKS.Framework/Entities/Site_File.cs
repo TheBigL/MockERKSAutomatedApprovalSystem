@@ -48,5 +48,8 @@ namespace ERKS.Framework.Entities
         public virtual Security_Classification SecurityClassification { get; set; }
 
         public virtual ICollection<Record_Details> RecordDetails { get; set; }
+
+        public virtual ICollection<Organization> Organizations { get; set; }
+        public virtual ICollection<Manager> Managers { get; set; }
     }
 }

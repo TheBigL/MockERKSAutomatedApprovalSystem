@@ -48,12 +48,12 @@ namespace ERKS.Framework.BLL.Security
                              RoleMemberships = person.Roles.Select(r => rm.FindById(r.RoleId).Name)
                          };
             
-            using(var context = new ApplicationDbContext())
+            using(var context = new MockERKSContext())
             {
                 foreach(var person in result)
                 {
                     //TODO: Finish the MockERKSDatabaseContext class before I can finish this method. 
-                    //person.FirstName = context.
+                    //person.FirstName = context.Site_Files.
                 }
             }
 
