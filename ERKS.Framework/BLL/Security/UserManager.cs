@@ -16,7 +16,7 @@ namespace ERKS.Framework.BLL.Security
     {
 
         public UserManager()
-            : base(new UserStore<ApplicationUser>(new MockERKSContext()))
+            : base(new UserStore<ApplicationUser>(new ApplicationDbContext()))
         {
         }
 
@@ -48,7 +48,7 @@ namespace ERKS.Framework.BLL.Security
                              RoleMemberships = person.Roles.Select(r => rm.FindById(r.RoleId).Name)
                          };
             
-            using(var context = new MockERKSContext())
+            using(var context = new ApplicationDbContext())
             {
                 foreach(var person in result)
                 {

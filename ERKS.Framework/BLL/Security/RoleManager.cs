@@ -13,7 +13,7 @@ namespace ERKS.Framework.BLL.Security
 {
     public class RoleManager : RoleManager<IdentityRole>
     {
-        public RoleManager() : base(new RoleStore<IdentityRole>(new MockERKSContext()))
+        public RoleManager() : base(new RoleStore<IdentityRole>(new ApplicationDbContext()))
         {
 
         }

@@ -65,6 +65,7 @@
     <Compile Include="BLL\Security\UnregisteredUser.cs" />
     <Compile Include="BLL\Security\UserManager.cs" />
     <Compile Include="DAL\MockERKSContext.cs" />
+    <Compile Include="DAL\Security\ApplicationDbContext.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Document_Type.cs" />
     <Compile Include="Entities\File_Type.cs" />
