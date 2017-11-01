@@ -1,4 +1,5 @@
 ﻿using ERKS.Framework.DAL;
+using ERKS.Framework.Entities.Security;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System;
@@ -17,7 +18,6 @@ namespace ERKS.Framework.BLL.Security
         public UserManager()
             : base(new UserStore<ApplicationUser>(new MockERKSContext()))
         {
-
         }
 
         #region Constants
@@ -31,7 +31,36 @@ namespace ERKS.Framework.BLL.Security
 
         #region User CRUD
         [DataObjectMethod(DataObjectMethodType.Select, true)]
-        public List<UserProfile>
+        public List<UserProfile> ListAllUsers()
+        {
+            var rm = new RoleManager();
+            var result = from person in Users.ToList()
+                         select new UserProfile()
+                         {
+                             UserId = person.Id,
+                             UserName = person.UserName,
+                             Email = person.Email,
+                             EmailConfirmed = person.EmailConfirmed,
+                             OrganizationId = person.OrganizationId,
+                             StaffId = person.StaffId,
+                             AdminId = person.AdminId,
+                             RoleMemberships = person.Roles.Select(r => rm.FindById(r.RoleId).Name)
+                         };
+            
+            using(var context = new MockERKSContext())
+            {
+                foreach(var person in result)
+                {
+                    //TODO: Finish the MockERKSDatabaseContext class before I can finish this method. 
+                    //person.FirstName = context.
+                }
+            }
+
+            return result.ToList();
+             
+
+
+        }
 
 
         #endregion
