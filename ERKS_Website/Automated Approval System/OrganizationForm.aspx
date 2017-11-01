@@ -1,16 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="OrganizationForm.aspx.cs" Inherits="Automated_Approval_System_OrganizationForm" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="OrganizationForm.aspx.cs" Inherits="Automated_Approval_System_OrganizationForm" MasterPageFile="~/Site.master" %>
 
-<!DOCTYPE html>
+<asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
+    <div="row">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-    
+
+
     </div>
-    </form>
-</body>
-</html>
+
+
+</asp:Content>
