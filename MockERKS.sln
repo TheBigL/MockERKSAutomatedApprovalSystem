@@ -1,11 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ERKS_Website(1)", "ERKS_Website\", "{BB67C27B-1327-4EBA-A84F-6E20254D5C17}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ERKS_Website", "ERKS_Website\", "{BB67C27B-1327-4EBA-A84F-6E20254D5C17}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		ProjectReferences = "{907050ca-1669-4d6f-8276-b19b274cc9c9}|ERKS.Framework.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_62300"
 		Debug.AspNetCompiler.PhysicalPath = "ERKS_Website\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62300\"
