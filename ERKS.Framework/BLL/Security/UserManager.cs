@@ -25,7 +25,7 @@ namespace ERKS.Framework.BLL.Security
         /// <summary>Requires FirstName and LastName</summary>
         private const string STR_USERNAME_FORMAT = "{0}.{1}";
         /// <summary>Requires UserName</summary>
-        private const string STR_EMAIL_FORMAT = "{0}@ToolsRUs.tba";
+        private const string STR_EMAIL_FORMAT = "{0}@Mockerks.ca";
         private const string STR_WEBMASTER_USERNAME = "Webmaster";
         #endregion
 
