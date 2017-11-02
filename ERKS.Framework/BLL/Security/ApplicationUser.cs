@@ -1,9 +1,4 @@
 ﻿using Microsoft.AspNet.Identity.EntityFramework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ERKS.Framework.BLL.Security
 {
@@ -12,7 +7,7 @@ namespace ERKS.Framework.BLL.Security
         public int? AdminId { get; set; }
         public int? StaffId { get; set; }
 
-        public int OrganizationId { get; set; }
+        public int? OrganizationId { get; set; }
 
     }
 }

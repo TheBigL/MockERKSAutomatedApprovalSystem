@@ -20,5 +20,9 @@ namespace ERKS.Framework.DAL
         public virtual DbSet<Site_Address> Site_Addresses { get; set; }
         public virtual DbSet<Record_Details> Record_Details { get; set; }
         public virtual DbSet<Organization> Organizations { get; set; }
+
+        public virtual DbSet<Officer> Officer { get; set;}
+
+        public virtual DbSet<Manager> Managers { get; set; }
     }
 }

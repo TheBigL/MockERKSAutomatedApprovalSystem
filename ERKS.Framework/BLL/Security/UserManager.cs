@@ -32,7 +32,7 @@ namespace ERKS.Framework.BLL.Security
 
         #region User CRUD
         [DataObjectMethod(DataObjectMethodType.Select, true)]
-        public List<UserProfile> ListAllUsers()
+        public List<UserProfile> ListAllStaff()
         {
             var rm = new RoleManager();
             var result = from person in Users.ToList()
@@ -42,7 +42,6 @@ namespace ERKS.Framework.BLL.Security
                              UserName = person.UserName,
                              Email = person.Email,
                              EmailConfirmed = person.EmailConfirmed,
-                             OrganizationId = person.OrganizationId,
                              StaffId = person.StaffId,
                              AdminId = person.AdminId,
                              RoleMemberships = person.Roles.Select(r => rm.FindById(r.RoleId).Name)
@@ -52,13 +51,41 @@ namespace ERKS.Framework.BLL.Security
             {
                 foreach(var person in result)
                 {
-                    //TODO: Finish the MockERKSDatabaseContext class before I can finish this method. 
-                    //person.FirstName = context.Site_Files.
+                    if(person.AdminId.HasValue)
+                    {
+                        //TODO: Finish the MockERKSDatabaseContext class before I can finish this method. 
+                        person.FirstName = context.Managers.Find(person.StaffId).First_Name;
+                        person.LastName = context.Managers.Find(person.StaffId).Last_Name;
+                    }
+
+                    else if (person.StaffId.HasValue)
+                    {
+                        person.FirstName = context.Officer.Find(person.StaffId).First_Name;
+                        person.LastName = context.Officer.Find(person.StaffId).Last_Name;
+                    }
+
+
+                    //If the user is neither an Administrator or a Staff member, the user's deleted from the list.
+                    else
+                    {
+                        Users.ToList().RemoveAll(x => x.UserName == person.UserName);                        
+                        continue;
+                    }
                 }
             }
 
+  
+                   
+                    //TODO: Finish the MockERKSDatabaseContext class before I can finish this method. 
+          
+
             return result.ToList();
         }
+
+
+
+
+
         #endregion
 
 
