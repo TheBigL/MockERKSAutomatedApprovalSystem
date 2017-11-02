@@ -64,13 +64,6 @@ namespace ERKS.Framework.BLL.Security
                         person.LastName = context.Officer.Find(person.StaffId).Last_Name;
                     }
 
-
-                    //If the user is neither an Administrator or a Staff member, the user's deleted from the list.
-                    else
-                    {
-                        Users.ToList().RemoveAll(x => x.UserName == person.UserName);                        
-                        continue;
-                    }
                 }
             }
 
@@ -81,6 +74,24 @@ namespace ERKS.Framework.BLL.Security
 
             return result.ToList();
         }
+
+        [DataObjectMethod(DataObjectMethodType.Insert, true)]
+        public void AddUser(UserProfile userInfo)
+        {
+            var userAccount = new ApplicationUser()
+            {
+                UserName = userInfo.UserName,
+                Email = userInfo.Email
+
+            };
+
+            this.Create(userAccount, STR_DEFAULT_PASSWORD);
+            foreach (var roleName in userInfo.RoleMemberships)
+                this.AddToRole(userAccount.Id, roleName);
+
+        }
+
+
 
 
 
