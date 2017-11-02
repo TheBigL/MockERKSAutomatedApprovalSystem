@@ -78,6 +78,7 @@
     <Compile Include="Entities\Organization.cs" />
     <Compile Include="Entities\Record_Details.cs" />
     <Compile Include="Entities\Security\RoleProfile.cs" />
+    <Compile Include="Entities\Security\SecurityRoles.cs" />
     <Compile Include="Entities\Security\UserProfile.cs" />
     <Compile Include="Entities\Security_Classification.cs" />
     <Compile Include="Entities\Site_Address.cs" />
@@ -88,6 +89,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="POCOs\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
