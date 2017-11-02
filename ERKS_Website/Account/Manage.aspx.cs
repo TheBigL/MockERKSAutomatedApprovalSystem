@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using ERKS_Website;
+using ERKS.Framework.BLL.Security;
 
 public partial class Account_Manage : System.Web.UI.Page
 {
@@ -99,7 +100,7 @@ public partial class Account_Manage : System.Web.UI.Page
     {
         UserManager manager = new UserManager();
         var accounts = manager.GetLogins(User.Identity.GetUserId());
-        CanRemoveExternalLogins = accounts.Count() > 1 || HasPassword(manager);
+        CanRemoveExternalLogins = accounts.Count > 1 || HasPassword(manager);
         return accounts;
     }
 
