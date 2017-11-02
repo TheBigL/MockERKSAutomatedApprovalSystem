@@ -13,7 +13,8 @@
            <h2>Members</h2>
             <h4>Leban Mohamed</h4>
             <ul>
-                <li>Responsibilities: To be determined</li>
+                <li>Security</li>
+                <li></li>
             </ul>
 
             <h4>Wenyu Zhang</h4>
