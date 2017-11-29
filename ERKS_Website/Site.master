@@ -55,6 +55,8 @@
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a runat="server" href="~/Account/Register">Register</a></li>
                                 <li><a runat="server" href="~/Account/Login">Log in</a></li>
+                                <li><a runat="server" href="~/AutomatedApprovalSystem/OrganizationForm.aspx">Register Organization</a></li>
+                                <li><a runat="server" href="~/AutomatedApprovalSystem/LookupFile.aspx">Lookup a File</a></li>
                             </ul>
                         </AnonymousTemplate>
                         <LoggedInTemplate>
